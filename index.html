@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Solar Meter</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:60px 20px;text-align:center}
+header h1{font-size:2.8em;color:#f5a623;letter-spacing:2px;margin-bottom:10px}
+header p{font-size:1.2em;color:#90caf9;max-width:700px;margin:0 auto}
+.badges{display:flex;justify-content:center;gap:15px;margin-top:25px;flex-wrap:wrap}
+.badge{background:#f5a623;color:#000;padding:8px 20px;border-radius:20px;font-weight:bold;font-size:0.9em;text-decoration:none}
+.badge.secondary{background:#1565c0;color:#fff}
+section{padding:60px 20px;max-width:1100px;margin:0 auto}
+h2{font-size:2em;color:#f5a623;margin-bottom:30px;text-align:center}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
+.feature-card{background:#1a1a2e;border:1px solid #0f3460;border-radius:12px;padding:25px;transition:transform 0.2s,border-color 0.2s}
+.feature-card:hover{transform:translateY(-4px);border-color:#f5a623}
+.feature-card .icon{font-size:2.2em;margin-bottom:12px}
+.feature-card h3{color:#90caf9;margin-bottom:10px;font-size:1.15em}
+.feature-card p{color:#b0bec5;font-size:0.95em}
+.langs{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:20px}
+.lang{background:#0f3460;color:#90caf9;padding:10px 22px;border-radius:8px;font-weight:bold;font-size:1em}
+.stores{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:30px}
+.store-btn{background:#f5a623;color:#000;padding:14px 32px;border-radius:10px;font-weight:bold;font-size:1.05em;text-decoration:none;transition:background 0.2s}
+.store-btn:hover{background:#ffca28}
+.store-btn.google{background:#4caf50;color:#fff}
+.store-btn.google:hover{background:#388e3c}
+divider{display:block;height:1px;background:#0f3460;margin:10px 0}
+footer{background:#0d0d1a;text-align:center;padding:30px 20px;color:#546e7a;font-size:0.9em}
+</style>
+</head>
+<body>
+<header>
+<h1>&#9728; Smart Solar Meter</h1>
+<p>Professional app for measuring, managing, and exporting data from solar panels and strings</p>
+<div class="badges">
+<a href="#features" class="badge">&#10003; App Features</a>
+<a href="#languages" class="badge secondary">&#127760; 7 Languages</a>
+</div>
+</header>
+
+<section id="features">
+<h2>Main Features</h2>
+<div class="features">
+
+<div class="feature-card">
+<div class="icon">&#128207;</div>
+<h3>Solar Panel Measurement</h3>
+<p>Simple and accurate measurement of <strong>voltage, current, and resistance</strong> directly in the field. Choose which values you want to measure.</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">&#128247;</div>
+<h3>Photos with String Label</h3>
+<p>Take a photo of a defect and the app automatically adds a <strong>label with the string and inverter name</strong> directly into the image.</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">&#128200;</div>
+<h3>Export to Multiple Formats</h3>
+<p>Export measured data to <strong>different file types</strong> for further processing or archiving.</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">&#128994;</div>
+<h3>Critical Values and Automatic Detection</h3>
+<p>Set <strong>critical limits</strong> for voltage, current, and resistance. The app automatically alerts you to incorrect values.</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">&#128270;</div>
+<h3>OCR Scanning from Meter</h3>
+<p>Read values directly from the meter display using <strong>advanced OCR</strong>. Detailed OCR settings ensure reliable reading under any conditions.</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">&#9997;</div>
+<h3>Notes for Strings</h3>
+<p>Add your own <strong>notes</strong> to each string and edit saved information at any time.</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">&#128274;</div>
+<h3>Bad Connector Marking</h3>
+<p>Quickly mark a string as having a <strong>bad connector</strong> with a single tap for fast defect tracking.</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">&#128204;</div>
+<h3>Custom String Labeling</h3>
+<p>Choose the naming style: <strong>basic</strong> (A, B, C), <strong>advanced</strong> (A1, A2, B1), <strong>numeric</strong>, or fully <strong>custom</strong> according to your needs.</p>
+</div>
+
+</div>
+</section>
+
+<section id="languages" style="background:#111;padding:60px 20px">
+<div style="max-width:900px;margin:0 auto;text-align:center">
+<h2>Supported Languages</h2>
+<p style="color:#90caf9;margin-bottom:20px">The app and exported data are available in 7 languages:</p>
+<div class="langs">
+<span class="lang">&#127464;&#127487; Czech</span>
+<span class="lang">&#127468;&#127463; English</span>
+<span class="lang">&#127475;&#127473; Dutch</span>
+<span class="lang">&#127464;&#127475; Chinese</span>
+<span class="lang">&#127465;&#127466; German</span>
+<span class="lang">&#127466;&#127480; Spanish</span>
+<span class="lang">&#127467;&#127479; French</span>
+</div>
+</div>
+</section>
+
+<section style="text-align:center">
+<h2>Download the App</h2>
+<p style="color:#90caf9;margin-bottom:10px">Available for Android and iOS</p>
+<div class="stores">
+<a href="#" class="store-btn google">&#9654; Google Play</a>
+<a href="#" class="store-btn">&#63743; App Store</a>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 Smart Solar Meter | App for managing solar panel measurements</p>
+</footer>
+</body>
+</html>
